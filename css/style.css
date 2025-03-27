@@ -1,87 +1,106 @@
+/* katik */
 .main-header{
     background-color:#162942 ;
     color: #ffffff;
     padding: 12px;
-    text-align: center;
+    text-align: center;  
 }
 .main-header>h1 {
     margin: 0px;
 }
-.main-header>h4 {
+.main-header>p {
     margin: 0px;
     font-family: math;
 }
 
+/* intro/welcome */
 .main{
     margin: 20px;
-    
 }
 .main-h{
     color:rgb(0, 0, 0);
     padding: 12px;
     text-align: center;
-    
 }
 .main-h>h1{
     margin: 0px;
 }
-.persegi{
-    background-color: #4a9acb ;
-    border-radius: 1rem;
-    color: #02012c;
-    text-align: center;
-    padding: 2px;
-}
-.nav-fiture{
-    border-radius: 1rem;
+
+/* pilihan b.datar */
+.nav-fiture {
     display: flex;
-    justify-content: space-around;
-    
+    flex-direction: row;
 }
-.nav-f1{
-    background-color:#97d4f1;
-    color: #05004b;
-    border-radius: 100%;
-    padding: 20px;
-}
-.nav-f2{
-    background-color:#d8e7ee;
-    color: #718bad;
-    border-radius: 1000%;
-    padding: 20px;
-}
-.selection-header1{
+.nav-fiture>a {
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 50%;
+    align-self: center;
+    border-radius: 1rem;
     text-align: center;
-    color:#010a14;
 }
-.selection-header1>p{
-    color:#000000;
-    text-align: left;
+.nav-fiture-non-active {
+    background-color: rgb(36, 45, 68);
 }
 
+.nav-fiture-active {
+    background-color: rgb(13, 21, 80);
+}
+
+/* gambar persegi  */
 .selection-image img {
     background-image: url(..assets\persegi.jpg);
-    width: 300px;
+    width: 200px;
     height: auto; 
     display: block;
     margin: 0 auto; 
 }
+/* keterangan bangun datar */
+.selection-header1>h1{
+    text-align: center;
+    background-color: #a3d0ec;
+}
 
+
+/* luas persegi  */
 .calculate-content {
     border: 1px solid;
     height: 500px;
     text-align: center;
 }
-.inpultsisi{
-    width: 300px; /* Membuat tabel selebar kontainer */
+.inputsisi{
+    width: 300px;
     height: 30px;
 }
-.buttonlsisi{
+.buttonsisi{
+    background-color: #a3d0ec;
+    border: 1px solid;
+}
+
+/* keliling persegi   */
+.calculate-content-k{
+    border: 1px solid;
+    height: 500px;
+    text-align: center;
+}
+.inputsisi-k{
+    width: 300px;
+    height: 30px;
+}
+.buttonsisi-k{
     background-color: #a3d0ec;
     border: 1px solid
 }
 
-
 footer {
     text-align: center;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 400px){
+    .nav-fiture{
+        display: flex;
+        flex-direction: column;
+    }
 }
