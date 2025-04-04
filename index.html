@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Aufa Fadilah</title>
     <link rel="stylesheet" href="css\style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -31,7 +31,8 @@
 
     <!-- gambar -->
         <div class="selection-image">
-            <img id="gambar" src="assets/persegi.jpg"/>
+            <img id="gambar" src="assets/persegi.jpg" 
+            alt="Gambar persegi" title="Ini gambar persegi"/>
         </div>
 
         <!-- persegi  -->
@@ -60,7 +61,6 @@
             <br><br>
            
             <button type="button" 
-            onclick="validateForm()" 
             class="buttonhitung" id="hitung">Hitung</button>
         </form>
     </div>
@@ -81,15 +81,14 @@
 
         <form>
             <input type="number" 
-            name="sisi" id="sisi-keliling" 
+            name="sisi" id="sisikeliling" 
             class="input-bdatar" 
             placeholder="Masukkan nilai sisi" 
             required> 
             <br><br>
 
             <button type="button" 
-            onclick="validateForm()" 
-            class="buttonhitung" id="hitung">Hitung</button>
+            class="buttonhitung" id="hitung2">Hitung</button>
         </form>
     </div>
 </selection>
@@ -116,22 +115,21 @@
         <form class="input">
             <!-- input panjang  -->
             <input type="number" 
-            name="panjang" id="panjang-luas" 
+            name="panjang" id="panjangluas" 
             class="input-bdatar" 
             placeholder="Masukkan nilai panjang" 
             required> 
 
             <!-- input lebar  -->
             <input type="number" 
-            name="lebar" id="lebar-luas" 
+            name="lebar" id="lebarluas" 
             class="input-bdatar" 
             placeholder="Masukkan nilai lebar" 
             required> 
             <br><br>
-           
+
             <button type="button" 
-            onclick="validateForm()" 
-            class="buttonhitung" id="hitung">Hitung</button>
+            class="buttonhitung" id="hitung3">Hitung</button>
         </form>
     </div>
 
@@ -153,22 +151,21 @@
         <form class="input">
             <!-- input panjang  -->
             <input type="number" 
-            name="panjang" id="panjang-keliling" 
+            name="panjang" id="panjangkeliling" 
             class="input-bdatar" 
             placeholder="Masukkan nilai panjang" 
             required>
 
             <!-- input lebar  -->
             <input type="number" 
-            name="lebar" id="lebar-keliling" 
+            name="lebar" id="lebarkeliling" 
             class="input-bdatar" 
             placeholder="Masukkan nilai lebar" 
             required>
             <br><br>
 
             <button type="button" 
-            onclick="validateForm()" 
-            class="buttonhitung" id="hitung">Hitung</button>
+            class="buttonhitung" id="hitung4">Hitung</button>
         </form>
     </div>
  </selection>
